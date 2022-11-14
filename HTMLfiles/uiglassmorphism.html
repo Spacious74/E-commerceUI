@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../CSSfiles/uiglassmorphism.css">
+    <title>Glassmorphismform.com</title>
+    <script src="https://kit.fontawesome.com/3d8295fecd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sign">
+        - vishal    
+    </div>
+
+    <nav class="navbar">
+        <div class="navcontainer">
+            <div class="left">
+                <div class="name">E-Commerce</div>
+            </div>
+            <div class="right">
+                <ul class="list">
+                    <li>Cart</li>
+                    <li>SignUp</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <span class="line"></span>
+
+    <div class="container">
+
+
+        <form class="form"  method="post">
+            <!-- <div class="heading">
+                Welcome Again!
+            </div> -->
+            <label for="name">Username</label>
+            <input type="text" class="input" id="name" name="username">
+            <label for="email">Email</label>
+            <input type="email" class="input" id="email" name="useremail">
+            <label for="password">Password</label>
+            <input type="password" class="input" id="password" name="upassword"><span class="forgot"> <a href="#">Forgot Password ?</a></span>
+            <i class="fa-solid fa-eye fa-lg imicon1" id="imopen" onclick="myFunction()"></i>
+            <i class="fa-solid fa-eye-slash fa-lg imicon1" id="imclose" onclick="myFunction2()"></i>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("password");
+                    if (x.type === "password") {
+                        x.type = "text";
+                        document.getElementById("imopen").style.display = "none";
+                        document.getElementById("imclose").style.display = "inline-block";
+                    } else {
+                        x.type = "password";
+                    }
+                }
+                function myFunction2() {
+                    var y = document.getElementById("password");
+                    if (y.type === "text") {
+                        y.type = "password";
+                        document.getElementById("imopen").style.display = "inline-block";
+                        document.getElementById("imclose").style.display = "none";
+                    } else {
+                        y.type = "password";
+                    }
+                }
+            </script>
+            <input type="submit" class="btn" value="Login" >
+
+        </form>
+
+    </div>
+</body>
+</html>
